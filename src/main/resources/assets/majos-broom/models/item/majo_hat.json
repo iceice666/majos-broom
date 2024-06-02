@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "majos-broom:item/majo_hat",
+    "layer1": "majos-broom:item/majo_hat_overlay"
+  }
+}
