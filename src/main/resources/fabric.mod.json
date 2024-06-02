@@ -1,0 +1,55 @@
+{
+	"schemaVersion": 1,
+	"id": "majos-broom",
+	"version": "${version}",
+	"name": "Majo's broom",
+	"description": "Add a flying broom to your game. ",
+	"authors": [
+		{
+			"contact": {
+				"email": 	"iceice666@outlook.com",
+				"homepage": "https://github.com/iceice666"
+			},
+			"name": "iceice666"
+		}
+	],
+	"contact": {
+
+		"sources": "https://github.com/iceice666/majos-broom",
+		"issues": "https://github.com/iceice666/majos-broom/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/majos-broom/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "net.iceice666.majosbroom.MajosBroom",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "net.iceice666.majosbroom.MajosBroomClient",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"majos-broom.mixins.json",
+		{
+			"config": "majos-broom.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"modmenu": ">=9.0.0"
+	}
+}
